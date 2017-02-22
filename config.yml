@@ -1,0 +1,97 @@
+# Your project's server will run on localhost:xxxx at this port
+SERVER:
+  port: 8000
+  browser: #'C:\\Program Files (x86)\\Firefox Developer Edition\\firefox.exe'
+
+#Folders
+FOLDERS:
+
+  #Absolute path. Empty means current directory
+  base: ""
+
+  temp: '.tmp/'
+
+  src: "src/"
+  build: "build/"
+
+  bower: "bower_components"
+  node: "node_modules"
+
+  srcassets: "src/assets/"
+  buildassets: "build/assets/"
+
+  srcimg: "src/assets/img/"
+  buildimg: "build/assets/img/"
+
+  srcscss: "src/assets/scss/"
+  buildcss: "build/assets/css/"
+
+  srcfont: "src/assets/font/"
+  buildfont: "build/assets/font/"
+
+  srcjs: "src/assets/js/"
+  buildjs: "build/assets/js/"
+
+  srcsvg: "src/assets/svg/"
+  buildsvg: "build/assets/img/"
+
+  srchtml: "src/html/"
+  buildhtml: "build/html/"
+
+  srctemplate: "src/template/"
+  srctemplatepartials: "src/template/partials/"
+
+  srclib: "src/lib/"
+
+#Files
+FILES:
+  mainjs: "main.js"
+  vendorjs: "vendor.js"
+  vendorcss: "vendor.css"
+  mainscss: "main.scss"
+  logo: "logo.png"
+  index: "index.html"
+  meta: "meta.html"
+
+
+#Globalpatterns
+GLOMATCH:
+  allsuballfiles: "**/*"
+  allsub: "**/"
+  allfiles: "*.*"
+  allsuballjs: "**/*.js"
+  allsuballcss: "**/*.css"
+  allsuballscss: "**/*.scss"
+  allsuballhtml: "**/*.html"
+  alljs: "*.js"
+  allcss: "*.css"
+  allhtml: "*.html"
+
+#MetalSmith Template Configuration
+MSTML:
+  engine: 'handlebars'
+  default: "layout.html"
+  directory: "src/template/layouts/"
+  partials: "src/template/partials/"
+  rename: true
+
+#Sass Configuration
+SASS_CONF:
+  outputStyle: 'nested'
+  precision: 3
+  errLogToConsole: true
+
+#Autoprefixer Configuration
+AUTOPREFIXER_CONF:
+  browsers: 
+    - 'last 2 versions'
+    - '> 2%'
+
+#Stylelint Configuration
+STYLELINT_CONF:
+  extends: "stylelint-config-standard"
+
+#PostCss Reporter Configuration
+REPORTER_CONF:
+  clearReportedMessages: true
+  throwError: false
